@@ -84,12 +84,6 @@
 						</goals>
 					</execution>
 				</executions>
-				<configuration>
-					<descriptorRefs>
-						<descriptorRef>jar-with-dependencies</descriptorRef>
-					</descriptorRefs>
-					<outputDirectory>jar</outputDirectory>
-				</configuration>
 			</plugin>
 		</plugins>
 	</build>
