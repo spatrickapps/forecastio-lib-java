@@ -6,17 +6,17 @@
 	<version>1.5.5</version>
 	<name>ForecastIO-Lib-Java</name>
 	<description>A Java Wrapper Library to get weather data from the Forecast.io API</description>
-	<url>https://github.com/dvdme/forecastio-lib-java/</url>
+	<url>https://github.com/spatrickapps/forecastio-lib-java/</url>
 
 	<scm>
-		<connection>scm:git:git@github.com:dvdme/forecastio-lib-java.git</connection>
-		<developerConnection>scm:git:git@github.com:dvdme/forecastio-lib-java.git</developerConnection>
-		<url>https://github.com/dvdme/forecastio-lib-java/</url>
-		<tag>https://github.com/dvdme/forecastio-lib-java/tags</tag>
+		<connection>scm:git:git@github.com:spatrickapps/forecastio-lib-java.git</connection>
+		<developerConnection>scm:git:git@github.com:spatrickapps/forecastio-lib-java.git</developerConnection>
+		<url>https://github.com/spatrickapps/forecastio-lib-java/</url>
+		<tag>https://github.com/spatrickapps/forecastio-lib-java/tags</tag>
 	</scm>
 
 	<issueManagement>
-		<url>https://github.com/dvdme/forecastio-lib-java/issues</url>
+		<url>https://github.com/spatrickapps/forecastio-lib-java/issues</url>
 		<system>GitHub Issues</system>
 	</issueManagement>
 
