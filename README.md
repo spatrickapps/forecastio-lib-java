@@ -10,6 +10,7 @@ A jar file is available under the jar folder for convenience.
 Java 1.7<br>
 Tested under Windows 7 64bits, Linux Mint 15 and Ubuntu 13.04 64bits, but it should run everywhere.
 
+[![](https://jitpack.io/v/spatrickapps/forecastio-lib-java.svg)](https://jitpack.io/#spatrickapps/forecastio-lib-java)
 ####Update (15-12-2013):
 * Alerts are now supported.
 * Errors are now supported.
