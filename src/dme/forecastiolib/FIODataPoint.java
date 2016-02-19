@@ -97,7 +97,7 @@ public class FIODataPoint {
             if (key.equals("time"))
                 return time();
             if (key.contains("Time")) {
-                DateFormat dfm = new SimpleDateFormat("HH:mm:ss");
+                DateFormat dfm = new SimpleDateFormat("HH:mm");
                 dfm.setTimeZone(TimeZone.getTimeZone(timezone));
                 out = dfm.format(Long.parseLong(String.valueOf(this.datapoint.get(key))) * 1000);
             } else
@@ -116,7 +116,7 @@ public class FIODataPoint {
      * @return An human-readable time string formated as [dd-MM-yyyy HH:mm:ss].  Returns "no data" if the field is not defined.
      */
     public String time() {
-        DateFormat dfm = new SimpleDateFormat("dd-MM-yyyy HH:mm:ss");
+        DateFormat dfm = new SimpleDateFormat("dd-MM-yyyy HH:mm");
         dfm.setTimeZone(TimeZone.getTimeZone(timezone));
         Long t = Long.parseLong(String.valueOf(this.datapoint.get("time")));
         String time = dfm.format(t * 1000);
@@ -158,7 +158,7 @@ public class FIODataPoint {
      */
     public String sunriseTime() {
         if (this.datapoint.containsKey("sunriseTime")) {
-            DateFormat dfm = new SimpleDateFormat("HH:mm:ss");
+            DateFormat dfm = new SimpleDateFormat("HH:mm");
             dfm.setTimeZone(TimeZone.getTimeZone(timezone));
             String time = dfm.format(Long.parseLong(String.valueOf(this.datapoint.get("sunriseTime"))) * 1000);
             return time;
@@ -174,7 +174,7 @@ public class FIODataPoint {
      */
     public String sunsetTime() {
         if (this.datapoint.containsKey("sunsetTime")) {
-            DateFormat dfm = new SimpleDateFormat("HH:mm:ss");
+            DateFormat dfm = new SimpleDateFormat("HH:mm");
             dfm.setTimeZone(TimeZone.getTimeZone(timezone));
             String time = dfm.format(Long.parseLong(String.valueOf(this.datapoint.get("sunsetTime"))) * 1000);
             return time;
@@ -218,7 +218,7 @@ public class FIODataPoint {
      */
     public String precipIntensityMaxTime() {
         if (this.datapoint.containsKey("precipIntensityMaxTime")) {
-            DateFormat dfm = new SimpleDateFormat("HH:mm:ss");
+            DateFormat dfm = new SimpleDateFormat("HH:mm");
             dfm.setTimeZone(TimeZone.getTimeZone(timezone));
             String time = dfm.format(Long.parseLong(String.valueOf(this.datapoint.get("precipIntensityMaxTime"))) * 1000);
             return time;
@@ -332,7 +332,7 @@ public class FIODataPoint {
      */
     public String temperatureMinTime() {
         if (this.datapoint.containsKey("temperatureMinTime")) {
-            DateFormat dfm = new SimpleDateFormat("HH:mm:ss");
+            DateFormat dfm = new SimpleDateFormat("HH:mm");
             dfm.setTimeZone(TimeZone.getTimeZone(timezone));
             String time = dfm.format(Long.parseLong(String.valueOf(this.datapoint.get("temperatureMinTime"))) * 1000);
             return time;
@@ -376,7 +376,7 @@ public class FIODataPoint {
      */
     public String temperatureMaxTime() {
         if (this.datapoint.containsKey("temperatureMaxTime")) {
-            DateFormat dfm = new SimpleDateFormat("HH:mm:ss");
+            DateFormat dfm = new SimpleDateFormat("HH:mm");
             dfm.setTimeZone(TimeZone.getTimeZone(timezone));
             String time = dfm.format(Long.parseLong(String.valueOf(this.datapoint.get("temperatureMaxTime"))) * 1000);
             return time;
@@ -420,7 +420,7 @@ public class FIODataPoint {
      */
     public String apparentTemperatureMinTime() {
         if (this.datapoint.containsKey("temperatureMinTime")) {
-            DateFormat dfm = new SimpleDateFormat("HH:mm:ss");
+            DateFormat dfm = new SimpleDateFormat("HH:mm");
             dfm.setTimeZone(TimeZone.getTimeZone(timezone));
             String time = dfm.format(Long.parseLong(String.valueOf(this.datapoint.get("apparentTemperatureMinTime"))) * 1000);
             return time;
@@ -450,7 +450,7 @@ public class FIODataPoint {
      */
     public String apparentTemperatureMaxTime() {
         if (this.datapoint.containsKey("apparentTemperatureMaxTime")) {
-            DateFormat dfm = new SimpleDateFormat("HH:mm:ss");
+            DateFormat dfm = new SimpleDateFormat("HH:mm");
             dfm.setTimeZone(TimeZone.getTimeZone(timezone));
             String time = dfm.format(Long.parseLong(String.valueOf(this.datapoint.get("apparentTemperatureMaxTime"))) * 1000);
             return time;
